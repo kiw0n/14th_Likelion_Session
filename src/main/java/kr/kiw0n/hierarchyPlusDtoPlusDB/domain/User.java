@@ -11,7 +11,7 @@ public class User {
         this.age = age;
         this.grade = grade;
         this.gender = gender;
-    }
+    } 
 
     public String getName(){
         return name;

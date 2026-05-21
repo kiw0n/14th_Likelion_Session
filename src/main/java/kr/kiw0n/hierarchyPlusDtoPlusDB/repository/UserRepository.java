@@ -12,7 +12,6 @@ public class UserRepository {
     public void save(User user){
         String sql =
                 "INSERT INTO user(name, age, grade, gender) VALUES(?, ?, ?, ?)";
-
         try (
                 Connection conn = DB.getConnection();
                 PreparedStatement ps = conn.prepareStatement(sql)
